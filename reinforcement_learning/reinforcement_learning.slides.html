@@ -15,8 +15,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <!-- General and theme style sheets -->
-<link rel="stylesheet" href="reveal.js/css/reveal.css">
-<link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">
+<link rel="stylesheet" href="../reveal.js/css/reveal.css">
+<link rel="stylesheet" href="../reveal.js/css/theme/simple.css" id="theme">
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -24,14 +24,14 @@ if( window.location.search.match( /print-pdf/gi ) ) {
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = 'reveal.js/css/print/pdf.css';
+        link.href = '../reveal.js/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
 }
 
 </script>
 
 <!--[if lt IE 9]>
-<script src="reveal.js/lib/js/html5shiv.js"></script>
+<script src="../reveal.js/lib/js/html5shiv.js"></script>
 <![endif]-->
 
 <!-- Loading the mathjax macro -->
@@ -67,8 +67,8 @@ if( window.location.search.match( /print-pdf/gi ) ) {
 *
 */
 /*!
- * Bootstrap v3.3.7 (http://getbootstrap.com)
- * Copyright 2011-2016 Twitter, Inc.
+ * Bootstrap v3.3.6 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
@@ -1163,6 +1163,7 @@ a:focus {
   text-decoration: underline;
 }
 a:focus {
+  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -2591,6 +2592,7 @@ select[size] {
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
+  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -3081,6 +3083,7 @@ select[multiple].input-lg {
 .btn.focus,
 .btn:active.focus,
 .btn.active.focus {
+  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -8811,9 +8814,6 @@ body > #header .header-bar {
     margin-left: 10px;
   }
 }
-[dir="rtl"] #ipython_notebook {
-  float: right !important;
-}
 #noscript {
   width: auto;
   padding-top: 16px;
@@ -9016,14 +9016,8 @@ span#login_widget > .button .badge,
  *
  * Author: Jupyter Development Team
  */
-[dir="rtl"] #tabs li {
-  float: right;
-}
 ul#tabs {
   margin-bottom: 4px;
-}
-[dir="rtl"] ul#tabs {
-  margin-right: 0px;
 }
 ul#tabs a {
   padding-top: 6px;
@@ -9046,16 +9040,6 @@ ul.breadcrumb span {
 }
 .list_toolbar .tree-buttons {
   padding-top: 1px;
-}
-[dir="rtl"] .list_toolbar .tree-buttons {
-  float: left !important;
-}
-[dir="rtl"] .list_toolbar .pull-right {
-  padding-top: 1px;
-  float: left !important;
-}
-[dir="rtl"] .list_toolbar .pull-left {
-  float: right !important;
 }
 .dynamic-buttons {
   padding-top: 3px;
@@ -9192,9 +9176,6 @@ ul.breadcrumb span {
 #tree-selector {
   padding-right: 0px;
 }
-[dir="rtl"] #tree-selector a {
-  float: right;
-}
 #button-select-all {
   min-width: 50px;
 }
@@ -9284,9 +9265,6 @@ ul#new-menu {
   left: auto;
   right: 0;
 }
-[dir="rtl"] #new-menu {
-  text-align: right;
-}
 .kernel-menu-icon {
   padding-right: 12px;
   width: 24px;
@@ -9331,9 +9309,6 @@ ul#new-menu {
 }
 #running .panel-group .panel .panel-body .list_container .list_item:last-child {
   border-bottom: 0px;
-}
-[dir="rtl"] #running .col-sm-8 {
-  float: right !important;
 }
 .delete-button {
   display: none;
@@ -9630,7 +9605,6 @@ div.cell.selected.jupyter-soft-selected {
   }
 }
 div.inner_cell {
-  min-width: 0;
   /* Old browsers */
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -9651,6 +9625,11 @@ div.inner_cell {
   box-flex: 1;
   /* Modern browsers */
   flex: 1;
+}
+@-moz-document url-prefix() {
+  div.inner_cell {
+    overflow-x: hidden;
+  }
 }
 /* input_area and input_prompt must match in top border and margin for alignment */
 div.input_area {
@@ -11321,7 +11300,7 @@ div#pager .ui-resizable-handle::after {
 }
 .shortcut_key {
   display: inline-block;
-  width: 21ex;
+  width: 20ex;
   text-align: right;
   font-family: monospace;
 }
@@ -11633,7 +11612,6 @@ ul.typeahead-list > li > a {
   box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
 }
 .terminal-app .terminal {
-  width: 100%;
   float: left;
   font-family: monospace;
   color: white;
@@ -11647,9 +11625,6 @@ ul.typeahead-list > li > a {
 .terminal-app .terminal dummy-screen {
   line-height: 1em;
   font-size: 14px;
-}
-.terminal-app .terminal .xterm-rows {
-  padding: 10px;
 }
 .terminal-app .terminal-cursor {
   color: black;
@@ -11871,8 +11846,8 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Horrible-Histories">Horrible Histories<a class="anchor-link" href="#Horrible-Histories">&#182;</a></h1><h2 id="Reinforcing-Rats">Reinforcing Rats<a class="anchor-link" href="#Reinforcing-Rats">&#182;</a></h2><table style="border: 0px;"><tr style="border: 0px;">
-    <td style="border: 0px; padding: 40px;"><img src="rl/skinner.jpg" alt="Skinner" style="width: 200px;"/></td>
-    <td style="border: 0px; padding: 40px"><img src="rl/skinnerbox.jpeg" alt="Skinner Box" style="width: 600px;"/></td>
+    <td style="border: 0px; padding: 40px;"><img src="figs/skinner.jpg" alt="Skinner" style="width: 200px;"/></td>
+    <td style="border: 0px; padding: 40px"><img src="figs/skinnerbox.jpeg" alt="Skinner Box" style="width: 600px;"/></td>
 </tr></table>
 </div>
 </div>
@@ -11895,8 +11870,8 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Horrible-Histories">Horrible Histories<a class="anchor-link" href="#Horrible-Histories">&#182;</a></h1><h2 id="Rodent-Junkies-and-Self-Pleasuring">Rodent Junkies and Self-Pleasuring<a class="anchor-link" href="#Rodent-Junkies-and-Self-Pleasuring">&#182;</a></h2><table style="border: 0px;"><tr style="border: 0px;">
-    <td style="border: 0px; padding: 40px;"><img src="rl/selfadmin.jpg" alt="Rat self-administering drugs" style="width: 400px"></td>
-    <td style="border: 0px; padding: 40px"><img src="rl/ratimplant.jpeg" alt="Rat with brain implant" style="width: 400px"></td>
+    <td style="border: 0px; padding: 40px;"><img src="figs/selfadmin.jpg" alt="Rat self-administering drugs" style="width: 400px"></td>
+    <td style="border: 0px; padding: 40px"><img src="figs/ratimplant.jpeg" alt="Rat with brain implant" style="width: 400px"></td>
 </tr></table>
 </div>
 </div>
@@ -11939,7 +11914,7 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<center><img src="rl/rlloop.png" alt="Sensorimotor Loop"></center>
+<center><img src="figs/rlloop.png" alt="Sensorimotor Loop"></center>
 </div>
 </div>
 </div><aside class="notes">
@@ -12096,9 +12071,7 @@ a.anchor-link {
 <div class="output">
 
 
-<div class="output_area">
-<div class="prompt"></div>
-
+<div class="output_area"><div class="prompt"></div>
 
 
 <div class="output_png output_subarea ">
@@ -12284,47 +12257,44 @@ TkSuQmCC
 <div class="output">
 
 
-<div class="output_area">
-<div class="prompt"></div>
-
+<div class="output_area"><div class="prompt"></div>
 
 
 <div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfEAAAFBCAYAAABn+JYIAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
-AAALEgAACxIB0t1+/AAAB0VJREFUeJzt3CHIrmcdx/H3ljPLg2XBoCKy6IJsLHhEZGMWBduaBrFa
-ZIpgERFhYWXFYhCDDETDMCtOgxOEc9KC0aDR9hQNl82z6y4v7rzuf774+eSbPz/eN3y5ynOstW4A
-gJ4PTQ8AAN4fEQeAKBEHgCgRB4AoEQeAKBEHgCgRB4AoEQeAKBEHgKh7/4ujl+PwM3AA8Biuax23
-feMlDgBRIg4AUSIOAFEiDgBRIg4AUSIOAFEiDgBRIg4AUSIOAFEiDgBRIg4AUSIOAFEiDgBRIg4A
-USIOAFEiDgBRIg4AUSIOAFEiDgBRIg4AUSIOAFEiDgBRIg4AUSIOAFEiDgBRIg4AUSIOAFEiDgBR
-Ig4AUSIOAFEiDgBRIg4AUSIOAFEiDgBR96YHfBCuf51ecPKr6QEnr67pBZvLcUxP2Hx6esB7PDM9
-4OQX653pCbvf3p9esHn3i9MLds8+WX+em5s/Pj+9YHM5HkxP+K95iQNAlIgDQJSIA0CUiANAlIgD
-QJSIA0CUiANAlIgDQJSIA0CUiANAlIgDQJSIA0CUiANAlIgDQJSIA0CUiANAlIgDQJSIA0CUiANA
+AAALEgAACxIB0t1+/AAABxtJREFUeJzt3DHLpFcdh+E8shLI2OgnEARZxRQisUtp42cQ0ogoaJEi
+NhZZC1GCjWARLEVIYyepQopgKViGJZLWRjBImAW1OHau52le2X3d/3vH66oPhx/DDDenmWOt9RwA
+0POp6QEAwJMRcQCIEnEAiBJxAIgScQCIEnEAiBJxAIgScQCIEnEAiLr3v7j0chz+Bg4AnsJ1reOm
+M17iABAl4gAQJeIAECXiABAl4gAQJeIAECXiABAl4gAQJeIAECXiABAl4gAQJeIAECXiABAl4gAQ
+JeIAECXiABAl4gAQJeIAECXiABAl4gAQJeIAECXiABAl4gAQJeIAECXiABAl4gAQJeIAECXiABAl
+4gAQJeIAECXiABAl4gAQJeIAECXiABB1b3rAs/C96QEnP39hesHug0fTC3ZfnR5wcl3/nJ7w2Jc/
+Pb1g9/b0gJOvTw84+dv0gJO/Tw/YvXrHnpG/mh7wBO7YRwgA/LdEHACiRBwAokQcAKJEHACiRBwA
+okQcAKJEHACiRBwAokQcAKJEHACiRBwAokQcAKJEHACiRBwAokQcAKJEHACiRBwAokQcAKJEHACi
+RBwAokQcAKJEHACiRBwAokQcAKJEHACiRBwAokQcAKJEHACiRBwAokQcAKJEHACiRBwAokQcAKJE
+HACi7k0PeBZ+PT3g5DePphfsXpkecOfdoZ/J+7+fXrB5/Xh5esLmx+uX0xM2D4/vT0/Y3P/j9ILd
+X6YHfAJ4iQNAlIgDQJSIA0CUiANAlIgDQJSIA0CUiANAlIgDQJSIA0CUiANAlIgDQJSIA0CUiANA
 lIgDQJSIA0CUiANAlIgDQJSIA0CUiANAlIgDQJSIA0CUiANAlIgDQJSIA0CUiANAlIgDQJSIA0CU
-iANAlIgDQNS96QEfiE9+YXrB5u1v/2F6wubFVz8zPeGJ9uefTC94j1emB+y+dtyfnrD5+ZemF+z+
-Mj3g5NmPTC84+dOD6QV5XuIAECXiABAl4gAQJeIAECXiABAl4gAQJeIAECXiABAl4gAQJeIAECXi
-ABAl4gAQJeIAECXiABAl4gAQJeIAECXiABAl4gAQJeIAECXiABAl4gAQJeIAECXiABAl4gAQJeIA
-ECXiABAl4gAQJeIAECXiABAl4gAQJeIAECXiABAl4gAQJeIAECXiABB1rLXu/OjlOO7+6GP4zvSA
-kxemB5x8Zf1sesLmcnx9esLmup6envAf3zj+MT1h89Pnphfs3no4vWD3uekBJx9dv5uesPvuS9ML
-NpfXpxfsrmsdt33jJQ4AUSIOAFEiDgBRIg4AUSIOAFEiDgBRIg4AUSIOAFEiDgBRIg4AUSIOAFEi
-DgBRIg4AUSIOAFEiDgBRIg4AUSIOAFEiDgBRIg4AUSIOAFEiDgBRIg4AUSIOAFEiDgBRIg4AUSIO
-AFEiDgBRIg4AUSIOAFEiDgBRIg4AUSIOAFEiDgBRIg4AUSIOAFHHWuvOj16O4+6PPobrr6cXnPxz
-esDue69ML9i99s3pBbvP/nh6wSMvTQ84eW29MT1hczm+NT1h83B6wMkPpgecvLmen56wuRwPpids
-rmsdt33jJQ4AUSIOAFEiDgBRIg4AUSIOAFEiDgBRIg4AUSIOAFEiDgBRIg4AUSIOAFEiDgBRIg4A
-USIOAFEiDgBRIg4AUSIOAFEiDgBRIg4AUSIOAFEiDgBRIg4AUSIOAFEiDgBRIg4AUSIOAFEiDgBR
-Ig4AUSIOAFEiDgBRIg4AUSIOAFEiDgBRIg4AUSIOAFHHWuvOj16O4+6PPobrejg9Yff956YX7H74
-9PSCk5enB5y8OT3gkQ8/Nb1g89a/phfsvjo94OS63piecPK36QGbLx+vT0/Y/H56wMl1reO2b7zE
-ASBKxAEgSsQBIErEASBKxAEgSsQBIErEASBKxAEgSsQBIErEASBKxAEgSsQBIErEASBKxAEgSsQB
-IErEASBKxAEgSsQBIErEASBKxAEgSsQBIErEASBKxAEgSsQBIErEASBKxAEgSsQBIErEASBKxAEg
-SsQBIErEASBKxAEgSsQBIErEASBKxAEg6lhr3fnRy3Hc/dHH8O70gJNP/WZ6wcnL70wv2H38/vSC
-zY/+Pr3gkc9PDzh5cX1sesLmcjxB/6ybm5vrU9MLTj4xPeDkl9MDdpcXphfsrmsdt33jJQ4AUSIO
-AFEiDgBRIg4AUSIOAFEiDgBRIg4AUSIOAFEiDgBRIg4AUSIOAFEiDgBRIg4AUSIOAFEiDgBRIg4A
-USIOAFEiDgBRIg4AUSIOAFEiDgBRIg4AUSIOAFEiDgBRIg4AUSIOAFEiDgBRIg4AUSIOAFEiDgBR
-Ig4AUSIOAFEiDgBRIg4AUSIOAFHHWuvOj16O4+6PAsD/ketax23feIkDQJSIA0CUiANAlIgDQJSI
+iANAlIgDQJSIA0CUiANAlIgDQJSIA0CUiANAlIgDQNSx1rr1Sy/HcfuXfoL8bnrAySvTA07+Oj3g
+5Prx9IL/8J3pAbsX35pesHtxesDJn6YHnLw5PeDka29ML9hdfji9YHdd67jpjJc4AESJOABEiTgA
+RIk4AESJOABEiTgARIk4AESJOABEiTgARIk4AESJOABEiTgARIk4AESJOABEiTgARIk4AESJOABE
+iTgARIk4AESJOABEiTgARIk4AESJOABEiTgARIk4AESJOABEiTgARIk4AESJOABEiTgARIk4AESJ
+OABEiTgARIk4AESJOABEHWutW7/0chy3f+lTuL4xveDkm9MDdt/4yvSC3TvrD9MTNl84Xpqe8G8f
+rjenJ5x8ZnrA5nJ8a3rC5vqT6QW7hz+aXrC7vx5MT9hcjgfTEzbXtY6bzniJA0CUiANAlIgDQJSI
 A0CUiANAlIgDQJSIA0CUiANAlIgDQJSIA0CUiANAlIgDQJSIA0CUiANAlIgDQJSIA0CUiANAlIgD
 QJSIA0CUiANAlIgDQJSIA0CUiANAlIgDQJSIA0CUiANAlIgDQJSIA0CUiANAlIgDQJSIA0CUiANA
-lIgDQJSIA0DUsdaa3gAAvA9e4gAQJeIAECXiABAl4gAQJeIAECXiABAl4gAQJeIAECXiABAl4gAQ
-JeIAECXiABAl4gAQJeIAECXiABAl4gAQJeIAECXiABAl4gAQJeIAECXiABAl4gAQJeIAEPVvZ4xw
-gj+teSEAAAAASUVORK5CYII=
+lIgDQJSIA0CUiANA1L3pAc/Eax9NL9j84vjs9ITNO89PLzj5/EvTCzYfvje94LHXj+9OT9j8Y3rA
+Xfe56QG7+1+aXrB7+XgwPSHPSxwAokQcAKJEHACiRBwAokQcAKJEHACiRBwAokQcAKJEHACiRBwA
+okQcAKJEHACiRBwAokQcAKJEHACiRBwAokQcAKJEHACiRBwAokQcAKJEHACiRBwAokQcAKJEHACi
+RBwAokQcAKJEHACiRBwAokQcAKJEHACiRBwAokQcAKJEHACiRBwAokQcAKKOtdatX3o5jtu/9Clc
+/zy94OQyPeDkp9MDdh/8bHrB7osvTC947OGj6QW7304POLljX+XnrusH0xNO3p0esPn28f70hM1b
+0wNOrmsdN53xEgeAKBEHgCgRB4AoEQeAKBEHgCgRB4AoEQeAKBEHgCgRB4AoEQeAKBEHgCgRB4Ao
+EQeAKBEHgCgRB4AoEQeAKBEHgCgRB4AoEQeAKBEHgCgRB4AoEQeAKBEHgCgRB4AoEQeAKBEHgCgR
+B4AoEQeAKBEHgCgRB4AoEQeAKBEHgCgRB4AoEQeAKBEHgKhjrXXrl16O4/YvBYD/I9e1jpvOeIkD
+QJSIA0CUiANAlIgDQJSIA0CUiANAlIgDQJSIA0CUiANAlIgDQJSIA0CUiANAlIgDQJSIA0CUiANA
+lIgDQJSIA0CUiANAlIgDQJSIA0CUiANAlIgDQJSIA0CUiANAlIgDQJSIA0CUiANAlIgDQJSIA0CU
+iANAlIgDQJSIA0CUiANAlIgDQJSIA0DUsdaa3gAAPAEvcQCIEnEAiBJxAIgScQCIEnEAiBJxAIgS
+cQCIEnEAiBJxAIgScQCIEnEAiBJxAIgScQCIEnEAiBJxAIgScQCIEnEAiBJxAIgScQCIEnEAiBJx
+AIgScQCIEnEAiPoXscVlYb+6IpQAAAAASUVORK5CYII=
 "
 >
 </div>
@@ -12498,7 +12468,7 @@ gj+teSEAAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Actor-Critic-Methods">Actor-Critic Methods<a class="anchor-link" href="#Actor-Critic-Methods">&#182;</a></h1><center><img src="rl/actorcritic.png" alt="Actor-Critic Model"></center>
+<h1 id="Actor-Critic-Methods">Actor-Critic Methods<a class="anchor-link" href="#Actor-Critic-Methods">&#182;</a></h1><center><img src="figs/actorcritic.png" alt="Actor-Critic Model"></center>
 </div>
 </div>
 </div><aside class="notes">
@@ -12519,7 +12489,7 @@ gj+teSEAAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Deep-Q-Learning">Deep Q Learning<a class="anchor-link" href="#Deep-Q-Learning">&#182;</a></h1><center><img src="rl/atarigames.png" alt="Atari Games" width="600"></center><ul>
+<h1 id="Deep-Q-Learning">Deep Q Learning<a class="anchor-link" href="#Deep-Q-Learning">&#182;</a></h1><center><img src="figs/atarigames.png" alt="Atari Games" width="600"></center><ul>
 <li>DeepMind - <a href="http://www.nature.com/nature/journal/v518/n7540/full/nature14236.html">Nature, February 2015</a></li>
 <li>Learned to play Atari games purely from pixel input</li>
 <li>Use CNN to learn Q-value</li>
@@ -12535,7 +12505,7 @@ gj+teSEAAAAASUVORK5CYII=
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Catastrophic-Forgetting">Catastrophic Forgetting<a class="anchor-link" href="#Catastrophic-Forgetting">&#182;</a></h1><p>Learning in one area can undo learning in another. Stability trick: <em>experience replay</em></p>
-<p><img src="rl/experiencememory.png" width="400"></p>
+<p><img src="figs/experiencememory.png" width="400"></p>
 
 </div>
 </div>
@@ -12558,7 +12528,7 @@ gj+teSEAAAAASUVORK5CYII=
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Learning-to-Drive?">Learning to Drive?<a class="anchor-link" href="#Learning-to-Drive?">&#182;</a></h1><p>DeepMind - <a href="https://arxiv.org/abs/1509.02971">ICLR 2016</a>, Deep Actor-Critic Method</p>
-<p><img src="rl/driving.png" width="400"></p>
+<p><img src="figs/driving.png" width="400"></p>
 
 </div>
 </div>
@@ -12596,7 +12566,7 @@ gj+teSEAAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="rl/crashed-model-s.jpg" width="400"></p>
+<p><img src="figs/crashed-model-s.jpg" width="400"></p>
 
 </div>
 </div>
@@ -12619,8 +12589,8 @@ gj+teSEAAAAASUVORK5CYII=
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Making-it-more-Human:-Hierarchy">Making it more Human: Hierarchy<a class="anchor-link" href="#Making-it-more-Human:-Hierarchy">&#182;</a></h1><table style="border: 0px;"><tr style="border: 0px;">
-    <td style="border: 0px; padding: 40px;"><img src="rl/hierarchy.png" alt="Hierarchy" style="width: 500px;"/></td>
-    <td style="border: 0px; padding: 40px"><img src="rl/fmri.jpg" alt="fMRI scan" style="width: 300px;"/></td>
+    <td style="border: 0px; padding: 40px;"><img src="figs/hierarchy.png" alt="Hierarchy" style="width: 500px;"/></td>
+    <td style="border: 0px; padding: 40px"><img src="figs/fmri.jpg" alt="fMRI scan" style="width: 300px;"/></td>
 </tr></table>
 </div>
 </div>
@@ -12642,7 +12612,7 @@ gj+teSEAAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Making-it-more-Human:-Back-to-Models">Making it more Human: Back to Models<a class="anchor-link" href="#Making-it-more-Human:-Back-to-Models">&#182;</a></h1><p><img src="rl/modelbased.png"></p>
+<h1 id="Making-it-more-Human:-Back-to-Models">Making it more Human: Back to Models<a class="anchor-link" href="#Making-it-more-Human:-Back-to-Models">&#182;</a></h1><p><img src="figs/modelbased.png"></p>
 <p><a href="https://arxiv.org/pdf/1603.00748.pdf">Cambridge + Google Brain + DeepMind, 2016</a></p>
 
 </div>
@@ -12668,7 +12638,7 @@ gj+teSEAAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Deep-Q-Network">Deep Q-Network<a class="anchor-link" href="#Deep-Q-Network">&#182;</a></h1><p><img src="rl/deepqnetwork.png" width="600"></p>
+<h1 id="Deep-Q-Network">Deep Q-Network<a class="anchor-link" href="#Deep-Q-Network">&#182;</a></h1><p><img src="figs/deepqnetwork.png" width="600"></p>
 
 </div>
 </div>
@@ -12753,9 +12723,7 @@ gj+teSEAAAAASUVORK5CYII=
 <div class="output">
 
 
-<div class="output_area">
-<div class="prompt output_prompt">Out[17]:</div>
-
+<div class="output_area"><div class="prompt output_prompt">Out[17]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
@@ -12787,8 +12755,8 @@ require(
       waitSeconds: 15
     },
     [
-      "reveal.js/lib/js/head.min.js",
-      "reveal.js/js/reveal.js"
+      "../reveal.js/lib/js/head.min.js",
+      "../reveal.js/js/reveal.js"
     ],
 
     function(head, Reveal){
@@ -12804,9 +12772,9 @@ require(
 
             // Optional libraries used to extend on reveal.js
             dependencies: [
-                { src: "reveal.js/lib/js/classList.js",
+                { src: "../reveal.js/lib/js/classList.js",
                   condition: function() { return !document.body.classList; } },
-                { src: "reveal.js/plugin/notes/notes.js",
+                { src: "../reveal.js/plugin/notes/notes.js",
                   async: true,
                   condition: function() { return !!document.body.classList; } }
             ]
