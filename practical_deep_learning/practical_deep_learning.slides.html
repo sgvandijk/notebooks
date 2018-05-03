@@ -16,7 +16,7 @@
 
 <!-- General and theme style sheets -->
 <link rel="stylesheet" href="../reveal.js/css/reveal.css">
-<link rel="stylesheet" href="../reveal.js/css/theme/solarized.css" id="theme">
+<link rel="stylesheet" href="../reveal.js/css/theme/simple.css" id="theme">
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -11957,15 +11957,6 @@ Sander van Dijk @ Parkopedia</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<center><img src="figs/mit-architectures.png"></center><p><small>Source: <a href="https://selfdrivingcars.mit.edu/">MIT 6.S094: Deep Learning for Self-Driving Cars</a></small></p>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Deep-Learning-Achievements:-ImageNet">Deep Learning Achievements: ImageNet<a class="anchor-link" href="#Deep-Learning-Achievements:-ImageNet">&#182;</a></h1><center><img src="figs/imagenet-examples.png"></center>
 </div>
 </div>
@@ -12065,6 +12056,134 @@ neural networks and tree search, Silver et al, Nature, 2016</small></p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="That's-a-Lot-of-Computation..">That's a Lot of Computation..<a class="anchor-link" href="#That's-a-Lot-of-Computation..">&#182;</a></h1><center><img src="figs/audi-trunk.jpg"></center>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="DL-Tasks-for-Self-Driving-Cars">DL Tasks for Self Driving Cars<a class="anchor-link" href="#DL-Tasks-for-Self-Driving-Cars">&#182;</a></h1><ul>
+<li><strong>Object Detection</strong> - Find bounding boxes of objects in an image (and what kind of objects they are)</li>
+<li><strong>Image Segmentation</strong> - What kind of object does each pixel belong to?</li>
+<li><strong>Object Segmentation</strong> - Which pixels belong to the same object (and what kind of object is that)?</li>
+<li>Reinforcement Learning - What actions should de car perform?</li>
+<li>Human Sensing - Is the driver paying attention?</li>
+</ul>
+<p>Image classifiaction, not so much</p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="DL-Tasks-for-SDCs:-Object-Detection">DL Tasks for SDCs: Object Detection<a class="anchor-link" href="#DL-Tasks-for-SDCs:-Object-Detection">&#182;</a></h1><center><img src="figs/yolo9000.png"></center><p><small>Source: <a href="https://github.com/karolmajek/darknet">Karol Majek</a> - YOLO9000</small></p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="DL-Tasks-for-SDCs:-Semantic-Segmentation">DL Tasks for SDCs: Semantic Segmentation<a class="anchor-link" href="#DL-Tasks-for-SDCs:-Semantic-Segmentation">&#182;</a></h1><center><img src="figs/semantic-segmentation.png"></center><p><small>Source: http://abhijitkundu.info/projects/fso/</small></p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="DL-Tasks-for-SDCs:-Object-Segmentation">DL Tasks for SDCs: Object Segmentation<a class="anchor-link" href="#DL-Tasks-for-SDCs:-Object-Segmentation">&#182;</a></h1><center><img src="figs/mask-rcnn.png"></center><p><small>Source: <a href="https://github.com/karolmajek/darknet">Karol Majek</a> - Mask-RCNN</small></p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<center><img src="figs/mit-architectures.png"></center><p><small>Source: <a href="https://selfdrivingcars.mit.edu/">MIT 6.S094: Deep Learning for Self-Driving Cars</a></small></p>
+
+</div>
+</div>
+</div><aside class="notes">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>If the network learns its output given image data, the base of the network is generally very similar: a bunch of encoding convolution layers</p>
+
+</div>
+</div>
+</div>
+</aside></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="How-to-Choose-a-Network?">How to Choose a Network?<a class="anchor-link" href="#How-to-Choose-a-Network?">&#182;</a></h1><h3 id="Fits-your-problem"><em>Fits your problem</em><a class="anchor-link" href="#Fits-your-problem">&#182;</a></h3><h3 id="But:-do-you-need-DL-all-the-way?">But: do you need DL all the way?<a class="anchor-link" href="#But:-do-you-need-DL-all-the-way?">&#182;</a></h3><h3 id="Computation-vs-Performance">Computation vs Performance<a class="anchor-link" href="#Computation-vs-Performance">&#182;</a></h3>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Computation-vs-Performance">Computation vs Performance<a class="anchor-link" href="#Computation-vs-Performance">&#182;</a></h1><center><img src="figs/mobilenet_v1.png"></center>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Computation-vs-Performance">Computation vs Performance<a class="anchor-link" href="#Computation-vs-Performance">&#182;</a></h1><center><img src="figs/yolo-perf.png"></center>
+</div>
+</div>
+</div><aside class="notes">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Watch out for resolutions, and authors that use flashy names.</li>
+<li>Testing is best, but can get an objective intuition of operations before building a network.</li>
+<li>Because understanding each layer and building and testing your own network is always better</li>
+</ul>
+
+</div>
+</div>
+</div>
+</aside></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Operation-Costs:-Convolution">Operation Costs: Convolution<a class="anchor-link" href="#Operation-Costs:-Convolution">&#182;</a></h1><center><img src="figs/convolution.png" style="width: 70%;"></center><p><small>Source: <a href="http://machinethink.net/blog/googles-mobile-net-architecture-on-iphone/">MachineThink</a></small></p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Operation-Costs:-Convolution">Operation Costs: Convolution<a class="anchor-link" href="#Operation-Costs:-Convolution">&#182;</a></h1><p><img src="figs/convolution.png" style="width: 30%; float: right;"></p>
+<ul>
+<li>A $W \times H$ input tensor (image)... </li>
+<li>with $C$ features (channels)...</li>
+<li>is convolved with $F$ ...</li>
+<li>$N \times N$ kernels</li>
+</ul>
+<p>Total number of operations (Multiply-Accumulate, MACs):</p>
+<p>$W \times H \times C \times F \times N^2$</p>
+
 </div>
 </div>
 </div></section></section>
