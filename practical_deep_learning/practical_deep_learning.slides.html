@@ -16,7 +16,7 @@
 
 <!-- General and theme style sheets -->
 <link rel="stylesheet" href="../reveal.js/css/reveal.css">
-<link rel="stylesheet" href="../reveal.js/css/theme/simple.css" id="theme">
+<link rel="stylesheet" href="../reveal.js/css/theme/solarized.css" id="theme">
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -12018,6 +12018,7 @@ neural networks and tree search, Silver et al, Nature, 2016</small></p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="But-At-What-Cost??">But At What Cost??<a class="anchor-link" href="#But-At-What-Cost??">&#182;</a></h1><p><strong>Training: huge GPU (/TPU) cluster</strong></p>
+<p><img src="figs/gpu-cluster.png" width="70%"></p>
 <p>OK, we can live with that, as long as we can run it in our car. Can we...?</p>
 
 </div>
@@ -12070,11 +12071,59 @@ neural networks and tree search, Silver et al, Nature, 2016</small></p>
 <li>Reinforcement Learning - What actions should de car perform?</li>
 <li>Human Sensing - Is the driver paying attention?</li>
 </ul>
-<p>Image classifiaction, not so much</p>
+<p>Image classificaction, not so much</p>
 
 </div>
 </div>
-</div></section></section><section><section>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="DL-Tasks-for-SDCs:-Object-Detection">DL Tasks for SDCs: Object Detection<a class="anchor-link" href="#DL-Tasks-for-SDCs:-Object-Detection">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">YouTubeVideo</span><span class="p">(</span><span class="s1">&#39;_kxX09i4fds&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">480</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[47]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+        <iframe
+            width="800"
+            height="480"
+            src="https://www.youtube.com/embed/_kxX09i4fds"
+            frameborder="0"
+            allowfullscreen
+        ></iframe>
+        
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -12083,7 +12132,55 @@ neural networks and tree search, Silver et al, Nature, 2016</small></p>
 
 </div>
 </div>
-</div></section></section><section><section>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="DL-Tasks-for-SDCs:-Semantic-Segmentation">DL Tasks for SDCs: Semantic Segmentation<a class="anchor-link" href="#DL-Tasks-for-SDCs:-Semantic-Segmentation">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">YouTubeVideo</span><span class="p">(</span><span class="s1">&#39;Nok6Xludc_Q&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">480</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[45]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+        <iframe
+            width="800"
+            height="480"
+            src="https://www.youtube.com/embed/Nok6Xludc_Q"
+            frameborder="0"
+            allowfullscreen
+        ></iframe>
+        
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -12092,7 +12189,55 @@ neural networks and tree search, Silver et al, Nature, 2016</small></p>
 
 </div>
 </div>
-</div></section></section><section><section>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="DL-Tasks-for-SDCs:-Object-Segmentation">DL Tasks for SDCs: Object Segmentation<a class="anchor-link" href="#DL-Tasks-for-SDCs:-Object-Segmentation">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">YouTubeVideo</span><span class="p">(</span><span class="s1">&#39;OOT3UIXZztE&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">480</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[44]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+        <iframe
+            width="800"
+            height="480"
+            src="https://www.youtube.com/embed/OOT3UIXZztE"
+            frameborder="0"
+            allowfullscreen
+        ></iframe>
+        
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -12186,6 +12331,651 @@ neural networks and tree search, Silver et al, Nature, 2016</small></p>
 
 </div>
 </div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Operation-Costs:-Convolution">Operation Costs: Convolution<a class="anchor-link" href="#Operation-Costs:-Convolution">&#182;</a></h1><ul>
+<li><p><strong>2 convs are better than 1</strong></p>
+<p>Convolution is <em>associative</em>: $ f \otimes (g \otimes h) = (f \otimes g) \otimes h $</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">gaussian5x5</span> <span class="o">=</span> <span class="n">gaussian2d</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">gaussian9x9</span> <span class="o">=</span> <span class="n">gaussian2d</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
+<span class="n">show_kernels</span><span class="p">([</span><span class="n">gaussian5x5</span><span class="p">,</span> <span class="n">gaussian9x9</span><span class="p">])</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWQAAACtCAYAAACHiwXoAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDIuMi4yLCBodHRwOi8vbWF0cGxvdGxpYi5vcmcvhp/UCwAABOFJREFUeJzt3LFuVEcUx+Fz42C5cxGlRJESuaF3RZWOlwChuMgzUdCEp0hFFaWgp4FEiigREu4sLPumoEkRyb6as8zf7Pc1NOszw+7VTyPLO8u6rgXAfN/M3gAAnwkyQAhBBgghyAAhBBkghCADhBBkgBCCDBBCkAFCfLvlxcuyrLMKfrRn61ZVXezZutdVta7r8qXXnflcd+t48zpmdHz/92v5DvH1539+X9f10U2vXbZ8dfpgWdZZgXowad2TSetWVb2ZtO7rSeteVNXVhCDPfK7/66Bhxr2GGR37uGqYcdkwo2Mfo7Y811/LwQDgzhNkgBCCDBBCkAFCCDJACEEGCCHIACEEGSCEIAOEEGSAEIIMEEKQAUIIMkAIQQYIsek+ZOD/dVx7+V3DjPsNM44bZpw3zHjXMONDw4yOa0BvywkZIIQgA4QQZIAQggwQQpABQggyQAhBBgghyAAhBBkghCADhBBkgBCCDBBCkAFCbLrt7aiqHuxoIzf5Y9K6h88nLVxVn87mrPtwzrL1etK6kMIJGSCEIAOEcEE9VNXB4M93XC7/c8OMXxtmnDYc015dj894Nj6iXjbMeN8w47ackAFCCDJACEEGCCHIACEEGSCEIAOEEGSAEIIMEEKQAUIIMkAIQQYIIcgAIQQZIIQgA4QQZIAQggwQwgX17L2lqu4NzrjfsI+Wy+V/axjy+Mfxfbz4e3wfT8ZHvB0fUR8Hf37Z8FonZIAQggwQQpABQggyQAhBBgghyAAhBBkghCADhBBkgBCbvql3VFUnO9rITQ6fT1r4l3XSwlWHm77j0+fkbMqy1fDdLrjTnJABQggyQAhBBgghyAAhBBkghCADhHBBPXtvqaqDwRnHDfs47TgeNVwuX/XX+IjHPw2POH06/oeQx9fDI4afDRfUA9xBggwQQpABQggyQAhBBgghyAAhBBkghCADhBBkgBCCDBBCkAFCCDJACEEGCCHIACEEGSCEIAOEcEE9e2+tqqvBGecN+3jVcJn66YvxS907Lpevhn10vB8dn8vos7FueK0TMkAIQQYIIcgAIQQZIIQgA4QQZIAQm/7s7aKq3uxoIzf5dDZn3cNa5ixc8/7Psz7ji0nrQgonZIAQggwQQpABQggyQAhBBgghyAAhBBkghCADhBBkgBAuqGfvrVV1OTjjXcM+njXMqCfjI06fZlwu3/F+dHwuo8+GC+oB7iBBBgghyAAhBBkghCADhBBkgBCCDBBCkAFCCDJACEEGCCHIACEEGSCEIAOEEGSAEIIMEEKQAUK4oB6q6mrw5z807OFlw4y3DTOOGy6XPx8f0XK5fMfnMvpsbOGEDBBCkAFCbPqVxUVVvd7RRm7ycNK6J2eTFq6qN5PWnfUZX0xaF1I4IQOEEGSAEIIMEEKQAUIIMkAIQQYIIcgAIQQZIIQgA4QQZIAQggwQQpABQggyQAgX1EODy4YZ7xtmfGyYcdAwo+NS94739EteLt/BCRkghCADhBBkgBCCDBBCkAFCCDJACEEGCCHIACEEGSCEIAOEEGSAEIIMEEKQAUIIMkAIQQYIIcgAIZZ1XW//4mV5X1X/7G477Lkf1nX9/ksv6rlmx06q6s91XR/d9MJNQQZgd/zKAiCEIAOEEGSAEIIMEEKQAUIIMkAIQQYIIcgAIQQZIMS/gkSC3yJvzlcAAAAASUVORK5CYII=
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Operation-Costs:-Convolution">Operation Costs: Convolution<a class="anchor-link" href="#Operation-Costs:-Convolution">&#182;</a></h1><ul>
+<li><p><strong>2 convs are better than 1</strong></p>
+<p>Convolution is <em>associative</em>: $ f \otimes (g \otimes h) = (f \otimes g) \otimes h $</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">convolved_gaussian</span> <span class="o">=</span> <span class="n">convolve2d</span><span class="p">(</span><span class="n">gaussian5x5</span><span class="p">,</span> <span class="n">gaussian5x5</span><span class="p">)</span>
+
+<span class="n">show_kernels</span><span class="p">([</span><span class="n">convolved_gaussian</span><span class="p">,</span> <span class="n">gaussian9x9</span><span class="p">])</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Operation-Costs:-Convolution">Operation Costs: Convolution<a class="anchor-link" href="#Operation-Costs:-Convolution">&#182;</a></h1><ul>
+<li><p><strong>2 convs are better than 1</strong></p>
+<p>Convolution is <em>associative</em>: $ f \otimes (g \otimes h) = (f \otimes g) \otimes h $</p>
+</li>
+<li>Instead of 5x5 conv layer, use 2 3x3 layers: 18 instead of 25 operations</li>
+<li><p>Consideration in 3D:</p>
+<p>$W \times H \times C \times F \times 3^2 + W \times H \times \color{red}{F} \times F \times 3^2$</p>
+<p>or:</p>
+<p>$W \times H \times C \times \color{red}C \times 3^2 + W \times H \times C \times F \times 3^2$</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Operation-Costs:-Convolution">Operation Costs: Convolution<a class="anchor-link" href="#Operation-Costs:-Convolution">&#182;</a></h1><ul>
+<li><p><strong>2 convs are better than 1, act 2</strong></p>
+<p>Convolution as <em>matrix product</em>: $ f \otimes (g \times h) = f \otimes (g \otimes h) $</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">row_vec</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]]</span>
+<span class="n">col_vec</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">]]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Convolution:&#39;</span><span class="p">);</span> <span class="n">print_ar</span><span class="p">(</span><span class="n">convolve2d</span><span class="p">(</span><span class="n">col_vec</span><span class="p">,</span> <span class="n">row_vec</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Matrix multiplication:&#39;</span><span class="p">);</span> <span class="n">print_ar</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">outer</span><span class="p">(</span><span class="n">col_vec</span><span class="p">,</span> <span class="n">row_vec</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Convolution:
+┌───┬───┬────┐
+│ 1 │ 0 │ -1 │
+├───┼───┼────┤
+│ 2 │ 0 │ -2 │
+├───┼───┼────┤
+│ 1 │ 0 │ -1 │
+└───┴───┴────┘
+Matrix multiplication:
+┌───┬───┬────┐
+│ 1 │ 0 │ -1 │
+├───┼───┼────┤
+│ 2 │ 0 │ -2 │
+├───┼───┼────┤
+│ 1 │ 0 │ -1 │
+└───┴───┴────┘
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Operation-Costs:-Convolution">Operation Costs: Convolution<a class="anchor-link" href="#Operation-Costs:-Convolution">&#182;</a></h1><ul>
+<li><p><strong>2 convs are better than 1, act 2</strong></p>
+<p>Convolution as <em>matrix product</em>: $ f \otimes (g \times h) = f \otimes (g \otimes h) $</p>
+</li>
+<li><p>Depthwise separable: break down 3D in first 2D, then depth</p>
+</li>
+</ul>
+<center><table style="border: 0px;"><tr style="border: 0px;">
+    <td  style="border: 0px;"><img src="figs/depthwise-convolution1.png" width="60%"></td>
+    <td style="border: 0px;"><img src="figs/depthwise-convolution2.png" width="60%"></td></tr></table></center><p><small>Source: <a href="http://machinethink.net/blog/googles-mobile-net-architecture-on-iphone/">MachineThink</a></small></p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Operation-Costs:-Convolution">Operation Costs: Convolution<a class="anchor-link" href="#Operation-Costs:-Convolution">&#182;</a></h1><ul>
+<li><p><strong>2 convs are better than 1, act 2</strong></p>
+<p>Convolution as <em>matrix product</em>: $ f \otimes (g \times h) = f \otimes (g \otimes h) $</p>
+<p><img src="figs/mobilenet_v1.png" style="float: right" width="30%"></p>
+</li>
+<li><p>Cost, instead of:</p>
+<p>$W \times H \times C \times F \times N^2$</p>
+<p>now:</p>
+<p>$W \times H \times C \times N^2 + W \times H \times C \times F $</p>
+<p>reduction: $\color{red}{1 / F + 1 / N^2} $</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Operation-Costs:-Fully-Connected-Layers">Operation Costs: Fully Connected Layers<a class="anchor-link" href="#Operation-Costs:-Fully-Connected-Layers">&#182;</a></h1><ul>
+<li>Used in: classification, object detection, reinforcement learning</li>
+<li>Flatten full image/feature map into 1D array</li>
+<li><p>Cost:</p>
+<p>$W \times H \times C \times M$</p>
+<p>but commonly: $M &gt; W \times H \times C$</p>
+</li>
+<li><p>Downsides:</p>
+<ul>
+<li>Bulk of computation in shallower networks</li>
+<li>Loss of spatial structure</li>
+<li>Fixes network input sizes</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="More-Ideas:-ResNet-Bottleneck">More Ideas: ResNet Bottleneck<a class="anchor-link" href="#More-Ideas:-ResNet-Bottleneck">&#182;</a></h1><center><img src="figs/bottleneck.jpg"></center><ul>
+<li>Reduce number of features before doing 2D convolution</li>
+<li>Nr parameters no bottleneck: ~600K , with: ~70K</li>
+<li>Number of operations may still be similar/more</li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="More-Ideas:-Discretisation">More Ideas: Discretisation<a class="anchor-link" href="#More-Ideas:-Discretisation">&#182;</a></h1><ul>
+<li>Rather than floating point, use integers</li>
+<li>XNOR-net (runtime), DoReFa (runtime + training)</li>
+<li>Opportunity for highly optimised integer operations</li>
+<li>But: some required operations not native on all platforms</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Analyse-and-Optimise-Post-Training">Analyse and Optimise Post-Training<a class="anchor-link" href="#Analyse-and-Optimise-Post-Training">&#182;</a></h1><p>Several tools informing you about your network; focussing on TensorFlow:</p>
+<ul>
+<li>TensorBoard: network layout</li>
+<li>Keras: network architecture, number of parameters</li>
+<li><p>TensorFlow C++ tools:</p>
+<ul>
+<li>Describe graph</li>
+<li>Benchmark model</li>
+</ul>
+</li>
+<li><p>XLA</p>
+</li>
+<li>TensorRT</li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="TensorFlow-C++-Tools:-Benchmark">TensorFlow C++ Tools: Benchmark<a class="anchor-link" href="#TensorFlow-C++-Tools:-Benchmark">&#182;</a></h1><ul>
+<li>Git clone, install/build Bazel, build tools...</li>
+<li>Bit easier: using Makefile[1]</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">bash</span>
+<span class="n">cd</span> <span class="err">$</span><span class="n">HOME</span><span class="o">/</span><span class="n">repos</span> <span class="o">&amp;&amp;</span> <span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">tensorflow</span><span class="o">/</span><span class="n">tensorflow</span>
+<span class="n">cd</span> <span class="n">tensorflow</span>
+<span class="n">tensorflow</span><span class="o">/</span><span class="n">contrib</span><span class="o">/</span><span class="n">makefile</span><span class="o">/</span><span class="n">download_dependencies</span><span class="o">.</span><span class="n">sh</span>
+<span class="n">tensorflow</span><span class="o">/</span><span class="n">contrib</span><span class="o">/</span><span class="n">makefile</span><span class="o">/</span><span class="n">build_all_linux</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span>%%bash
+<span class="nb">export</span> <span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span><span class="nv">$HOME</span>/repos/tensorflow/tensorflow/contrib/makefile/gen/protobuf/lib/
+<span class="nv">$HOME</span>/repos/tensorflow/tensorflow/contrib/makefile/gen/bin/benchmark <span class="se">\</span>
+  --graph<span class="o">=</span><span class="nv">$HOME</span>/graphs/inception/tensorflow_inception_graph.pb <span class="se">\</span>
+  --input_layer<span class="o">=</span><span class="s2">&quot;input&quot;</span> --input_layer_shape<span class="o">=</span><span class="s2">&quot;1,224,224,3&quot;</span> --input_layer_type<span class="o">=</span><span class="s2">&quot;float&quot;</span> --output_layer<span class="o">=</span><span class="s2">&quot;output&quot;</span> <span class="se">\</span>
+  --show_flops<span class="o">=</span><span class="nb">true</span> <span class="se">\</span>
+ <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span> &gt;/dev/null <span class="p">|</span> cut -f <span class="m">5</span>- -d <span class="s1">&#39; &#39;</span> &gt; benchmark1.out.txt
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><small>[1] https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/makefile</small></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="benchmark1.out.txt">Result</a></p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="TensorFlow-C++-Tools:-Optimise">TensorFlow C++ Tools: Optimise<a class="anchor-link" href="#TensorFlow-C++-Tools:-Optimise">&#182;</a></h1><ul>
+<li><code>transform_graph</code>[1] - need Bazel after all..</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span>%%bash
+<span class="nb">cd</span> <span class="nv">$HOME</span>/repos/tensorflow
+bazel build tensorflow/tensorflow/tools/graph_transforms:transform_graph <span class="p">&amp;</span>&gt;/dev/null
+bazel-bin/tensorflow/tools/graph_transforms/transform_graph <span class="se">\</span>
+--in_graph<span class="o">=</span><span class="nv">$HOME</span>/graphs/inception/tensorflow_inception_graph.pb <span class="se">\</span>
+--out_graph<span class="o">=</span><span class="nv">$HOME</span>/graphs/inception/optimized_inception_graph.pb <span class="se">\</span>
+--inputs<span class="o">=</span><span class="s1">&#39;input&#39;</span> <span class="se">\</span>
+--outputs<span class="o">=</span><span class="s1">&#39;output&#39;</span> <span class="se">\</span>
+--transforms<span class="o">=</span><span class="s1">&#39;</span>
+<span class="s1">  strip_unused_nodes(type=float, shape=&quot;1,224,224,3&quot;)</span>
+<span class="s1">  remove_nodes(op=Identity, op=CheckNumerics)</span>
+<span class="s1">  fold_constants(ignore_errors=true)</span>
+<span class="s1">  fold_batch_norms</span>
+<span class="s1">  fold_old_batch_norms&#39;</span> <span class="p">&amp;</span>&gt;/dev/null
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><small>[1] https://github.com/tensorflow/tensorflow/tree/master/tensorflow/tools/graph_transforms</small></p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="TensorFlow-C++-Tools:-Optimise">TensorFlow C++ Tools: Optimise<a class="anchor-link" href="#TensorFlow-C++-Tools:-Optimise">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span>%%bash
+<span class="nb">export</span> <span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span><span class="nv">$HOME</span>/repos/tensorflow/tensorflow/contrib/makefile/gen/protobuf/lib/
+<span class="nv">$HOME</span>/repos/tensorflow/tensorflow/contrib/makefile/gen/bin/benchmark <span class="se">\</span>
+  --graph<span class="o">=</span><span class="nv">$HOME</span>/graphs/inception/tensorflow_inception_graph.pb <span class="se">\</span>
+  --input_layer<span class="o">=</span><span class="s2">&quot;input&quot;</span> --input_layer_shape<span class="o">=</span><span class="s2">&quot;1,224,224,3&quot;</span> --input_layer_type<span class="o">=</span><span class="s2">&quot;float&quot;</span> --output_layer<span class="o">=</span><span class="s2">&quot;output&quot;</span> <span class="se">\</span>
+  --show_flops<span class="o">=</span><span class="nb">true</span> <span class="se">\</span>
+ <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span> &gt;/dev/null <span class="p">|</span> cut -f <span class="m">5</span>- -d <span class="s1">&#39; &#39;</span> <span class="p">|</span> tail -n <span class="m">2</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>FLOPs estimate: 3.19B
+FLOPs/second: 289.48B
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span>%%bash
+<span class="nb">export</span> <span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span><span class="nv">$HOME</span>/repos/tensorflow/tensorflow/contrib/makefile/gen/protobuf/lib/
+<span class="nv">$HOME</span>/repos/tensorflow/tensorflow/contrib/makefile/gen/bin/benchmark <span class="se">\</span>
+  --graph<span class="o">=</span><span class="nv">$HOME</span>/graphs/inception/optimized_inception_graph.pb <span class="se">\</span>
+  --input_layer<span class="o">=</span><span class="s2">&quot;input:0&quot;</span> --input_layer_shape<span class="o">=</span><span class="s2">&quot;1,224,224,3&quot;</span> --input_layer_type<span class="o">=</span><span class="s2">&quot;float&quot;</span> --output_layer<span class="o">=</span><span class="s2">&quot;output:0&quot;</span> <span class="se">\</span>
+  --show_flops<span class="o">=</span><span class="nb">true</span> <span class="se">\</span>
+ <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span> &gt;/dev/null <span class="p">|</span> cut -f <span class="m">5</span>- -d <span class="s1">&#39; &#39;</span> <span class="p">|</span> tail -n <span class="m">2</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>FLOPs estimate: 1.97B
+FLOPs/second: 178.61B
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="TensorFlow-XLA---Accelerated-Linear-Algebra">TensorFlow XLA - Accelerated Linear Algebra<a class="anchor-link" href="#TensorFlow-XLA---Accelerated-Linear-Algebra">&#182;</a></h1><ul>
+<li>Domain-specific compiler for linear algebra</li>
+<li>Optimizes TensorFlow computations</li>
+<li>Results: improvements in speed, memory usage, portability</li>
+</ul>
+<center><img src="figs/xla-warning.png"></center><p><small>Source: https://www.tensorflow.org/performance/xla/</small></p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Nvidia-TensorRT">Nvidia TensorRT<a class="anchor-link" href="#Nvidia-TensorRT">&#182;</a></h1><center><img src="figs/tensorrt.png"></center><p><small>Source: https://developer.nvidia.com/tensorrt</small></p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="How-Many-FLOPs-Does-it-Take?">How Many FLOPs Does it Take?<a class="anchor-link" href="#How-Many-FLOPs-Does-it-Take?">&#182;</a></h1><ul>
+<li>FLOPs of your hardware, divided by...</li>
+<li>Number of cameras, divided by...</li>
+<li>Frame rate, times...</li>
+<li>Ratio to leave room for other things that need to be done</li>
+</ul>
+<p><img src="figs/scenarios.png"></p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Extreme-Use-Case:-RoboCup">Extreme Use Case: RoboCup<a class="anchor-link" href="#Extreme-Use-Case:-RoboCup">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">YouTubeVideo</span><span class="p">(</span><span class="s1">&#39;pzYHAp7b7sY&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">480</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[48]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+        <iframe
+            width="800"
+            height="480"
+            src="https://www.youtube.com/embed/pzYHAp7b7sY"
+            frameborder="0"
+            allowfullscreen
+        ></iframe>
+        
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Hardware:-Octa-Core-Mobile-ARM">Hardware: Octa-Core Mobile ARM<a class="anchor-link" href="#Hardware:-Octa-Core-Mobile-ARM">&#182;</a></h1><p><img src="figs/odroid-xu4.jpg"></p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Ball-Segmentation-network">Ball Segmentation network<a class="anchor-link" href="#Ball-Segmentation-network">&#182;</a></h1><p><img src="figs/boldnet.png"></p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Ball-Segmentation-Network">Ball Segmentation Network<a class="anchor-link" href="#Ball-Segmentation-Network">&#182;</a></h1><p><img src="figs/boldnet-keras.png" width="40%"></p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="figs/ball-results.png" width="80%"></p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Ball-Segmentation-Network">Ball Segmentation Network<a class="anchor-link" href="#Ball-Segmentation-Network">&#182;</a></h1><p><img src="figs/boldnet-perf.png"></p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Conclusions">Conclusions<a class="anchor-link" href="#Conclusions">&#182;</a></h1><ul>
+<li>Think about most fitting/cheapest model class</li>
+<li>Break up operations (<em>convolution</em>) to reduce costs</li>
+<li>Benchmark your model</li>
+<li>Smaller is not necessarily faster, larger not necessarily better</li>
+<li>Use optimisation/productionisation tools</li>
+<li><strong>Test, test, test</strong></li>
+</ul>
+<p>Notebook + slides on my GitHub:</p>
+<h3 id="https://github.com/sgvandijk/notebooks"><a href="https://github.com/sgvandijk/notebooks">https://github.com/sgvandijk/notebooks</a><a class="anchor-link" href="#https://github.com/sgvandijk/notebooks">&#182;</a></h3>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Self-Driving-Track-Days">Self Driving Track Days<a class="anchor-link" href="#Self-Driving-Track-Days">&#182;</a></h1><p><img src="figs/trackdays.png"></p>
+<p><small>https://selfdrivingtrackdays.com/</small></p>
+
+</div>
+</div>
 </div></section></section>
 </div>
 </div>
@@ -12232,7 +13022,7 @@ require(
         Reveal.addEventListener('slidechanged', update);
 
         function setScrollingSlide() {
-            var scroll = false
+            var scroll = true
             if (scroll === true) {
               var h = $('.reveal').height() * 0.95;
               $('section.present').find('section')
