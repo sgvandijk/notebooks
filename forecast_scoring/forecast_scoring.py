@@ -132,7 +132,7 @@ def calibration_example(
 
     # First set up the figure, the axis, and the plot element we want to animate
     if calibration_score:
-        figsize = 4
+        figsize = 8
     else:
         figsize = 8
         
