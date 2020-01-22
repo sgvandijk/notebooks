@@ -12,7 +12,12 @@ think may be interesting for others.
   example code, and pointers to cool new developments such as Deep
   RL. As presented at the
   [London Self-Driving/Autonomous Car Technology Meetup](https://www.meetup.com/London-Self-Driving-Autonomous-Car-Technology-Meetup/).
-  
+
+* [Python Workshops](python_workshop) - An introduction to Python,
+  with sessions covering Python basics, control and project
+  structures, classes & objects, decorators, and some packages in
+  Python's standard library.
+
 Each notebook has its requirements file to install packages needed to
 run the notebook yourself:
 
