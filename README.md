@@ -18,8 +18,11 @@ think may be interesting for others.
   structures, classes & objects, decorators, and some packages in
   Python's standard library.
 
-Each notebook has its requirements file to install packages needed to
-run the notebook yourself:
+* [Object detection with (Fast(er)) RCNNs](object_detection_rcnn/Object%20detection%20with%20%28Fast%28er%29%29%20RCNNs.ipynb) - A walk through the members of the R-CNN deep neural
+  object detection family.
+
+Each notebook has its requirements file to install
+packages needed to run the notebook yourself:
 
     pip install -r requirements.txt
 
